@@ -1,0 +1,355 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+
+
+body {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+    font-family: 'Open Sans', sans-serif;
+    outline: 0;
+    background-color: #00bce4;
+}
+
+html,body{
+    height: 100%
+}
+
+body{
+    overflow: hidden;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+}
+
+ul,ol {
+    font-size: 13px;  
+}
+
+ol {
+    list-style: disc;
+}
+
+a {
+    color: #00bce4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 21px;
+}
+
+
+.btn-primary {
+    border-color: #FF432E;
+    background-color: #FF432E;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #fff;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -o-border-radius:3px;
+    border-radius:3px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    color: #fff;
+    border-color: #ea321e;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+    border-color: #FF432E;
+    background-color: #FF432E;
+}
+
+
+/**** Start Section Title Section ****/
+
+.section-title h3{
+    color: #666 !important;
+    font-size: 28px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: none;
+}
+
+.section-title p {
+    padding-bottom: 60px;
+    color: #999;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/**** Start Background Color ****/
+
+.blue {
+    background: #00bce4;
+}
+
+/**** Start Main Body Section ****/
+
+.mainbody-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.menu-item {
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+    border: 5px solid transparent;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.menu-item:hover{
+    border: 5px solid rgba(255, 255, 255, 0.70);
+}
+
+.menu-item a {
+    color: #fff;
+    display: block;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.menu-item a p {
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.menu-item a i {
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+.menu-item:hover a {
+    text-decoration: none;
+}
+
+@media only screen 
+and (min-width : 600px) 
+and (max-width : 991px) {
+    
+    .menu-item {
+        display: inline-block;
+        width: 32.8%;
+    }
+    
+    .menu-item.responsive {
+        width: 49.5%;
+        float: left;
+        margin-right: 3px;
+        margin-top: 5px;
+    }
+    
+    .menu-item.responsive-2 {
+        width: 49.5%;
+        float: right;
+        margin-top: 5px;
+    }
+    
+}
+
+@media only screen 
+and (min-width : 992px) 
+and (max-width : 1199px) {
+    
+    .menu-item {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    
+    .menu-item a i {
+        font-size: 32px;
+    }
+    
+    .menu-item a p {
+        font-size: 16px;
+    }
+    
+}
+
+/**** Start Modal Section ****/
+
+.modal-header .close {
+  font-size: 50px;
+  color: #00bce4;
+  opacity: 1;
+}
+
+/******* overlay *******/
+.blur {
+    -webkit-filter: blur(4px);
+}
+
+.touch-icon {
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    z-index: 1;
+}
+.overlay p {
+    text-align: center;
+    position: relative;
+    top: 10%;
+    height: 30%;
+    font-size: 120px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.overlay .small-info {
+    font-size: 50px;
+}
+
+.overlay-data {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+    transition: opacity 0.5s, visibility 0s 0.5s;
+}
+.overlay-open {
+    opacity: 0.5;
+    visibility: visible;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+
+.overlay-info {
+    padding-top: 100px;
+}
+
+.navbar-static-top {
+    z-index: 0 !important; 
+}
+
+.circle {
+  padding: 100px;
+  position: relative;
+}
+
+.pulse-ring {
+  width: 400px;
+  height: 400px;
+  border: 10px solid #fff;
+  border-radius: 50%;
+  position: relative;
+  top: -110px;
+  left: 0;
+  margin: auto;
+  animation: pulsate infinite 1s;
+}
+
+@-webkit-keyframes pulsate {
+  0% {
+    -webkit-transform: scale(1, 1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.2, 1.2);
+    opacity: 0;
+  }
+}
+
+/*Ronan CSS changes*/
+
+.tab-content p  {
+    font-size: 20px;
+    text-align: left;
+    color: #323232;
+}
+.tab-content ul  {
+    font-size: 20px;
+    color: #323232;
+}
+.modal-content p{
+    font-size: 20px;
+    color: #323232;
+}
+
+.modal-content ul   {
+    font-size: 20px;
+    color: #323232;
+}
+
+.modal-content h1{
+    font-weight: 500;
+    text-align: center;
+    color: #323232;
+}
+
+.modal-content h2{
+    text-align: left;
+    color: #323232;
+    font-size: 25px;
+}
+
+.modal-content .tab-content .tab-pane h1  {
+    text-align: left;
+    font-weight: 400;
+    padding-bottom: 5px;
+    color: #323232;
+}
+
+.modal-content u {
+    color: #00bce4;
+}
+
+.big-icon {
+    font-size: 140px !important;
+}
+
+.medium-icon{
+    font-size: 100px !important;
+}
+
+.small-icon {
+    font-size: 25px !important;
+}
