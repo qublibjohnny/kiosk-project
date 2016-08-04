@@ -61,3 +61,9 @@ Added git repository
 
 04/08/16
 created new dev branch in git
+added new icons to main screen
+removed unnecessary divs on search box
+made search input full width
+added new google font
+changed 'need some help' to 'information'
+added blue background to modal header

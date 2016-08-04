@@ -296,30 +296,21 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h1>Search QCat library</h1>
+                        <h1>Search the QCat Library</h1>
                     </div>
                     <div class="modal-body" >
-                        <div class="tab-content">
-                            <div id='QCatLibrarySearch' class='tab-pane fade in active'>
-                                <div id="tabcalframe">
-                                    <p>Use the QCat Library Catalogue to find out if the Library holds an item you require.</p>
-                                    <!--QCat search-->
-                                    <div id="qcat-search">
-                                        <form class="navbar-form" role="search" action="" onsubmit="return searchEncore()">
-                                            <div class="input-group col-md-12">
-                                                <input class="form-control input-group-lg" style="height: 50px; font-size: large" id="encoreSearchInput" 
-                                                       placeholder=" Search for library books, e-books and more..." required="" onfocus="if(this.value==this.defaultValue) this.value='';" type="text">
-                                                <input type="hidden" id="encoreBase" value="http://encore.qub.ac.uk/iii/encore_qub/search/">
-                                                <div class="input-group-btn">
-                                                    <button class="btn btn-info btn-group-lg" style="height: 50px; font-size: large" type="submit"> Search</button>
-                                                </div>
-                                            </div>
-                                        </form>
+                        <!--QCat search-->
+                            <form class="form-horizontal" role="search" action="" onsubmit="return searchEncore()">
+                                <div class="input-group col-md-12">
+                                    <input class="form-control input-group-lg" style="height: 50px; font-size: large" id="encoreSearchInput" 
+                                           placeholder=" Search for library books, e-books and more..." required="" onfocus="if(this.value==this.defaultValue) this.value='';" type="text">
+                                    <input type="hidden" id="encoreBase" value="http://encore.qub.ac.uk/iii/encore_qub/search/">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-info btn-group-lg" style="height: 50px; font-size: large" type="submit"> Search</button>
                                     </div>
-                                    <!--End QCAT search--> 
                                 </div>
-                            </div>
-                        </div>
+                            </form>
+                        <!--End QCAT search--> 
                     </div>
                 </div>
             </div>

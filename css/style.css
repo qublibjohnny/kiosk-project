@@ -208,9 +208,14 @@ and (max-width : 1199px) {
 
 /**** Start Modal Section ****/
 
+.modal-header {
+    background-color: #00bce4;
+    margin-bottom: 10px;
+}
+
 .modal-header .close {
   font-size: 50px;
-  color: #00bce4;
+  color: #ffffff;
   opacity: 1;
 }
 
@@ -326,7 +331,7 @@ and (max-width : 1199px) {
 .modal-content h1{
     font-weight: 500;
     text-align: center;
-    color: #323232;
+    color: #ffffff;
 }
 
 .modal-content h2{
