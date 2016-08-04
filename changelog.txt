@@ -58,3 +58,6 @@ Removed the previous version of font-awesome
 03/08/2016
 Removed Feedback
 Added git repository
+
+04/08/16
+created new dev branch in git
