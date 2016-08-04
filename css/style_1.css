@@ -208,7 +208,7 @@ and (max-width : 1199px) {
 /**** Start Modal Section ****/
 
 .modal-header .close {
-  font-size: 50px;
+  font-size: 75px;
   color: #00bce4;
   opacity: 1;
 }
