@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,300);
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+@import 'https://fonts.googleapis.com/css?family=Raleway:200,300';
 
 
 body {
@@ -9,7 +10,7 @@ body {
     background-position: 50% 50%;
     font-family: 'Open Sans', sans-serif;
     outline: 0;
-    background-color: #000;
+    background-color: #fff;
 }
 
 html,body{
@@ -239,9 +240,8 @@ and (max-width : 1199px) {
     position: relative;
     top: 10%;
     height: 30%;
-    font-size: 120px;
+    font-size: 140px;
     color: white;
-    font-family: sans-serif;
 }
 
 .overlay .small-info {
@@ -352,4 +352,9 @@ and (max-width : 1199px) {
 
 .small-icon {
     font-size: 25px !important;
+}
+
+.help-heading {
+    font-family: 'Raleway', sans-serif;
+
 }
