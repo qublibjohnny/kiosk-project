@@ -10,7 +10,6 @@ body {
     background-position: 50% 50%;
     font-family: 'Open Sans', sans-serif;
     outline: 0;
-    background-color: #fff;
     background-color: #00bce4;
 }
 
@@ -303,13 +302,17 @@ and (max-width : 1199px) {
 
 .tab-content p  {
     font-size: 20px;
-    text-align: left;
     color: #323232;
 }
 .tab-content ul  {
     font-size: 20px;
     color: #323232;
 }
+
+.modal-content {
+    font-family: 'Raleway', sans-serif;
+}
+
 .modal-content p{
     font-size: 20px;
     color: #323232;
@@ -357,5 +360,14 @@ and (max-width : 1199px) {
 
 .help-heading {
     font-family: 'Raleway', sans-serif;
+}
 
+.tile {
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.tile-search {
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
 }
