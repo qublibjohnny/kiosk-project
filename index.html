@@ -1,30 +1,25 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <title>Biomedical Kiosk</title>
 
         <!-- Bootstrap Core CSS -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Font Awesome CSS -->
         <link href="css/font-awesome.min.css" rel="stylesheet">
 
         <!-- Custom CSS -->
         <link href="css/style.css" rel="stylesheet">
         <!--<link href="css/style.min.css" rel="stylesheet">-->
 
-        <!-- Template js -->
+        <!-- js -->
         <script src="js/jquery-3.1.0.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <script src="js/jquery.appear.js"></script>      
     </head>
-    
+
     <body>    
-        
+
         <!-- start overlay -->
         <div class="overlay overlay-data">
             <div class="container-fluid">
@@ -38,7 +33,7 @@
             </div>   
         </div>
         <!-- end overlay-->        
-        
+
         <div class="container text-center">            
             <!--start first row-->
             <div class="row">
@@ -88,30 +83,30 @@
 
                 <!--FAQ's Modal icon-->
                 <div class="col-md-6">
-                  <div class="menu-item blue" data-toggle="modal" data-target="#standardModal">
-                      <img src="images/help-100.png">
-                      <h2 class="tile">FAQ's</h2>
-                  </div>
+                    <div class="menu-item blue" data-toggle="modal" data-target="#standardModal">
+                        <img src="images/help-100.png">
+                        <h2 class="tile">FAQs</h2>
+                    </div>
                 </div>
                 <!--FAQ's modal icon-->
             </div>
             <!-- End third row -->
 
-<!--            Start fourth row
-            <div class="row">
-                Feedback icon
-                <div class="col-md-12">
-                    <div class="menu-item blue" data-toggle="modal" data-target="#feedbackModal">
-                        <i class="fa fa-thumbs-o-up small-icon"></i>
-                    </div>
-                </div>
-                End Feedback icon
-            </div>
-            End fourth row                                -->
+            <!--            Start fourth row
+                        <div class="row">
+                            Feedback icon
+                            <div class="col-md-12">
+                                <div class="menu-item blue" data-toggle="modal" data-target="#feedbackModal">
+                                    <i class="fa fa-thumbs-o-up small-icon"></i>
+                                </div>
+                            </div>
+                            End Feedback icon
+                        </div>
+                        End fourth row                                -->
         </div>
         <!-- End container-->
-                
-    <!--Modal's-->
+
+        <!--Modal's-->
         <!--FAQ's Modal-->
         <div id ="standardModal" class="modal fade">
             <div class="modal-dialog modal-lg">
@@ -119,29 +114,28 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h1>Frequently Asked Question's</h1>
+                        <h1>Frequently Asked Questions</h1>
                     </div>
                     <div class="panel-group" id="accordion">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h2 class="panel-title">
+                                <p class="panel-title">
                                     <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                                    Where can I get past exam papers?</a>
-                                </h2>
+                                        Where can I get past exam papers?</a>
+                                </p>
                             </div>
                             <div id="collapseOne" class="panel-collapse collapse in">
                                 <div class="panel-body">
-                                    <p>Past exam papers can be accessed online by following this link:</p>
-                                    <p><u>http://go.qub.ac.uk/pastpapers</u></p>
+                                    <p>Visit the following address: http://go.qub.ac.uk/pastpapers</p>
                                 </div>
                             </div>
                         </div>
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h2 class="panel-title">
+                                <p class="panel-title">
                                     <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                                    How many items can I borrow and how long can I keep them?</a>
-                                </h2>
+                                        How many items can I borrow and how long can I keep them?</a>
+                                </p>
                             </div>
                             <div id="collapseTwo" class="panel-collapse collapse">
                                 <div class="panel-body">
@@ -151,38 +145,68 @@
                                     </p>
                                     <p>
                                         If a book you have on loan is requested by another library user then you need to return it within one week.
-                                        For full details, go on:
-                                     </p>
-                                     <p><u>http://go.qub.ac.uk/bookloan</u></p>
+                                        For full details, visit the following address: http://go.qub.ac.uk/bookloan</p>
                                 </div>
                             </div>
                         </div>
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h2 class="panel-title">
+                                <p class="panel-title">
                                     <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                                    What are the library's opening hours?</a>
-                                </h2>
+                                        What are the library's opening hours?</a>
+                                </p>
                             </div>
                             <div id="collapseThree" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    <p>The opening hours for the library can be found at the following address:</p>
-                                    <p><u>http://go.qub.ac.uk/libhours</u></p>
+                                    <script src="//api3.libcal.com/js/hours_grid.js?002"></script> 
+                                    <div id="s-lc-whw0"></div> 
+                                    <script>
+                                        $(function () {
+                                            var week0 = new $.LibCalWeeklyGrid($("#s-lc-whw0"), {iid: 1694, lid: 0, weeks: 4});
+                                        });
+                                    </script> 
+
+                                    <!-- Please note: The following styles are optional, feel free to modify! //-->
+                                    <style>
+                                        .s-lc-whw thead { background-color: #F5F5F5; }
+                                        .s-lc-whw-head-date { color: #999; }
+                                        .s-lc-whw-today-h {  background-color: #ddd; }
+                                        .s-lc-whw-today { background-color: #F5F5F5; }
+                                        .s-lc-whw-bh { text-align: right; white-space: nowrap; }
+                                        .s-lc-whw-locname { font-weight: bold;}
+                                        .s-lc-whw-sublocname{ padding-left: 10px!important; }
+                                        .s-lc-whw-footnote { color: #555; font-size: 80%; }
+                                        .s-lc-whw-footnote td:hover { background-color:#fff!important;}
+                                        /* Below styles can be removed if you are already using Bootstap v3 in host page */
+                                        .s-lc-whw-cont {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 12px;}
+                                        .s-lc-whw-pr, .s-lc-whw-ne{ padding: 5px 10px; font-size: 12px; line-height: 1.5; border-radius: 3px; color: #333; background-color: #fff; border-color: #ccc; display: inline-block; margin-bottom: 0; font-weight: 400; text-align: center; vertical-align: middle; cursor: pointer; background-image: none; border: 1px solid transparent; white-space: nowrap; }
+                                        .s-lc-whw-pr:disabled { background-color: #efefef; }
+                                        .s-lc-whw-ne:disabled { background-color: #efefef; }
+                                        .s-lc-whw { width: 100%; margin-bottom: 20px; max-width: 100%; background-color: transparent; border-bottom: none; border-left: none; border-collapse: collapse; border-spacing: 0; }
+                                        .s-lc-whw>tbody>tr>td { padding: 5px; }
+                                        .s-lc-whw>thead>tr>th { vertical-align: bottom; border-bottom: 2px solid #ddd; padding: 5px;}
+                                        .s-lc-whw th { border-top: none; border-bottom: none; border-right: none;}
+                                        .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+                                        @media (max-width: 768px) {
+                                            .s-lc-whw-cont .table-responsive { width: 100%; margin-bottom: 15px; overflow-y: hidden; overflow-x: scroll; -ms-overflow-style: -ms-autohiding-scrollbar; border: 1px solid #ddd; -webkit-overflow-scrolling: touch; }
+                                            .s-lc-whw td { white-space: nowrap; }
+                                        }
+                                    </style>
                                 </div>
                             </div>
                         </div>
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h2 class="panel-title">
+                                <p class="panel-title">
                                     <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-                                    How do I book a study group?</a>
-                                </h2>
+                                        How do I book a study group?</a>
+                                </p>
                             </div>
                             <div id="collapseFour" class="panel-collapse collapse">
                                 <div class="panel-body">
                                     <p>To book a study room use the following steps:</p>
                                     <ul>
-                                        <li>Log on to Queen's Online: <u>https://www.qub.ac.uk/qol</u></li>
+                                        <li>Log on to Queen's Online: https://www.qub.ac.uk/qol</li>
                                         <li>Open 'Administration' under 'Services'</li>
                                         <li>Select Group Study Room Booking</li>
                                         <li>Follow the subsequent steps to book your Study Room</li>
@@ -192,15 +216,15 @@
                         </div>
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h2 class="panel-title">
+                                <p class="panel-title">
                                     <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
-                                    How do I print in the Library from my Laptop</a>
-                                </h2>
+                                        How do I print in the Library from my Laptop</a>
+                                </p>
                             </div>
                             <div id="collapseFive" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    <p>Visit: <u>http://go.qub.ac.uk/webprint</u></p>
-                                    <p>Log in with your details and follow the subsequent instructions</p>
+                                    <p>Visit the following address: http://go.qub.ac.uk/webprint</p>
+                                    <p>Log in with your details and follow the instructions</p>
                                 </div>
                             </div>
                         </div>
@@ -210,14 +234,14 @@
             </div>
         </div> 
         <!--End FAQ's modal-->
-                    
+
         <!--Floor Plan Modal-->
         <div id ="tabbedModal" class="modal fade">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                         <h1>Floor Plan</h1>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1>Floor Plan</h1>
                     </div>
                     <div class="modal-body">
                         <p>The floor plan is as follows:</p>
@@ -232,52 +256,58 @@
             </div>
         </div>
         <!--End Floor Plan Modal-->
-                
+
         <!--Requesting Items Modal-->
         <div id ="requestingItems" class="modal fade">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h1>Requesting items</h1>
+                        <h1>Requesting Items</h1>
                     </div>
-                    <ul class="nav nav-tabs">
-                        <li class="active"><a href="#requestingTabOne" data-toggle="tab">Items on loan</a></li>
-                        <li><a href="#requestingTabTwo" data-toggle="tab">Items From Other Libraries</a></li>
-                        <li><a href="#requestingTabThree" data-toggle="tab">Collecting a request</a></li>
-                        <li><a href="#requestingTabFour" data-toggle="tab">Rules</a></li>
-                    </ul>
+
                     <div class="modal-body">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#requestingTabOne" data-toggle="tab">Items on loan</a></li>
+                            <li><a href="#requestingTabTwo" data-toggle="tab">Items From Other Libraries</a></li>
+                            <li><a href="#requestingTabThree" data-toggle="tab">Collecting a Request</a></li>
+                            <li><a href="#requestingTabFour" data-toggle="tab">Rules</a></li>
+                        </ul>
                         <div class="tab-content">
-                            <div id='requestingTabOne' class='tab-pane fade'>
+                            <div id='requestingTabOne' class='tab-pane fade in active'>
                                 <p class="text-center">Books on loan from the Library's standard and 1 week loan collections can be requested using the QCat Library Catalogue.</p>
-                                <ul>
+                                <ul class="text-center list-unstyled well">
                                     <li>Search for the item in the QCat Library Catalogue</li>
                                     <li>A 'Request it' button is displayed if all requestable copies are on loan</li>
                                     <li>Click on the link to place your request</li>
-                                    <li>If you haven't already logged in to My Account, you will need to enter your Library / Student number and password</li>
-                                    <li>Select where you would like to collect the item when it is available (pick up location) and click to confirm your request</li>
+                                    <li>Login to your account</li>
+                                    <li>Select where you would like to collect the item and confirm</li>
                                 </ul>
-                                <p>When a copy is available for you to collect you will be notified by email.</p>
-                                <p>You can also check your account on Queen's Online or the QCat Library Catalogue to see if your requests are available.</p>
+                                <div class="text-center modal-notes">
+                                    <p>When a copy is available for you to collect you will be notified by email.</br>You can also check the status on Queen's Online.</p>
+                                </div>
                             </div>
                             <div id='requestingTabTwo' class='tab-pane fade'>
-                                <p> Books and journal articles can be requested from other Queen's libraries if they are not available in the library you are using.</p>
-                                <p>Requests are made via the Inter-Branch Loan service. Staff at any of the Borrower Services Desks can take your request.</p>
+                                <div class="text-center">
+                                    <p> Books and journal articles can be requested from other Queen's libraries if they are not available in the library you are using.</p>
+                                    <p>Requests are made via the Inter-Branch Loan service. Staff at any of the Borrower Services Desks can take your request.</p>
+                                </div>
                             </div>
                             <div id='requestingTabThree' class='tab-pane fade'>
                                 <div>
-                                    <p>Requested items can be picked up from the following areas:</p>
-                                    <ul>
+                                    <p class="text-center">Requested items can be picked up from the following areas:</p>
+                                    <ul class="text-center list-unstyled well">
                                         <li>Self-service collection shelves in The McClay Library and Biomedical Library.</li>
                                         <li>Borrower Services Desk in the Medical Library or AFBI libraries.</li>
                                     </ul>
-                                    <p>Please cancel your request if you no longer need a book - other people might be waiting for it.</p> 
+                                    <p class="text-center">Please cancel your request if you no longer need a book - other people might be waiting for it.</p> 
                                 </div>
                             </div>
-                            <div id='requestingTabFour' class='tab-pane fade in active'>
-                                <p class="text-center">We operate a request system so that we can make popular items available to as many borrowers as possible.</p>
-                                <ul>
+                            <div id='requestingTabFour' class='tab-pane fade in'>
+                                <p class="text-center">We operate a request system so that we can make popular items available to as many borrowers as possible.
+
+                                </p>
+                                <ul class="text-center list-unstyled well">
                                     <li>You can reserve up to 5 items</li>
                                     <li>You can reserve standard loan items and 1 week loan items</li>
                                     <li>You cannot reserve 1 night, 2 night or 7 night loan items</li>
@@ -289,7 +319,7 @@
             </div>
         </div>
         <!--End Requesting Items Modal-->
-                
+
         <!--Start Search Catalogue Modal-->
         <div id ="searchCatalogueModal" class="modal fade">
             <div class="modal-dialog modal-lg">
@@ -298,25 +328,29 @@
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <h1>Search the QCat Library</h1>
                     </div>
-                    <div class="modal-body" >
+                    <div class="modal-body">
                         <!--QCat search-->
-                            <form class="form-horizontal" role="search" action="" onsubmit="return searchEncore()">
-                                <div class="input-group col-md-12">
-                                    <input class="form-control input-group-lg" style="height: 50px; font-size: large" id="encoreSearchInput" 
-                                           placeholder=" Search for library books, e-books and more..." required="" onfocus="if(this.value==this.defaultValue) this.value='';" type="text">
-                                    <input type="hidden" id="encoreBase" value="http://encore.qub.ac.uk/iii/encore_qub/search/">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-info btn-group-lg" style="height: 50px; font-size: large" type="submit"> Search</button>
-                                    </div>
+                        <form class="form-horizontal" role="search" action="" onsubmit="return searchEncore()">
+                            <div class="input-group col-md-12">
+                                <input class="form-control input-group-lg" style="height: 50px; font-size: large" id="encoreSearchInput" 
+                                       placeholder=" Search for library books, e-books and more..." required="" onfocus="if (this.value == this.defaultValue)
+                                                       this.value = '';" type="text">
+                                <input type="hidden" id="encoreBase" value="http://encore.qub.ac.uk/iii/encore_qub/search/">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-info btn-group-lg" style="height: 50px; font-size: large" type="submit"> Search</button>
                                 </div>
-                            </form>
+                            </div>
+                        </form>
+                        <div class="text-center search-tip">
+                            <p class="text-muted"><strong>Tip!</strong> Search by author, title or keyword.</p>
+                        </div>
                         <!--End QCAT search--> 
                     </div>
                 </div>
             </div>
         </div>
         <!--End search catalogue modal-->
-                
+
         <!--Feedback modal-->
         <div id ="feedbackModal" class="modal fade">
             <div class="modal-dialog modal-lg">
@@ -346,7 +380,7 @@
             </div>
         </div>
         <!--End feedback modal-->
-                
+
         <!--Borrowing from the library modal-->
         <div id ="borrowingFromTheLibraryModal" class="modal fade">
             <div class="modal-dialog modal-lg" style="overflow-y:auto; max-height: 90%;">
@@ -356,70 +390,66 @@
                         <h1>Borrowing from the library</h1>
                     </div>
                     <div class="modal-body">
-                        <p>You can access the (QCat) Library catalogue and most electronic resources from any PC on the University campus.</p>
-                        <p>You can access library electronic resources anywhere, through Queen’s Online.</p>
-                        <p>Use the QCat Library Catalogue to find out if the Library holds an item you require.</p>
-                        <ul>
-                            <li>You can search by author, title or keyword.</li>
-                            <li>
-                                If we have the item you are looking for it will be displayed, 
-                                along with details of the Library in which it is held, 
-                                how long it can be borrowed for and its library shelfmark location.
-                            </li>
-                            <li>Books, journals and other resources are arranged in shelfmark order.</li>
-                            <li>The shelfmark is the combination of letters and numbers printed on the spine (and/or front cover) of each item.</li>
-                            <li>Everything in the Library is shelved alphabetically and numerically.</li>
-                            <li>If you can't find a book contact the nearest Borrower Services or Enquiry Desk.</li>
-                            <li>For books / journal articles that you need that are not available in Queen’s see Inter-Library Loans (ILL).</li>
-                            <li>Remember, much of the content of the library's journal collections can be found online together with a growing collection of ebooks.</li>
+                        <div class="text-center">
+                            <p>Library members can borrow from any Queen’s library using their Queen's staff, student or library card. You will not be able to borrow books if:</p>
+                            <hr>
+                        </div>
+                        <ul class="text-center list-unstyled well">
+                            <li>You don’t have your library card</li>
+                            <li>You have unpaid fines</li>
+                            <li>You have very overdue books</li>
+                            <li>You try to borrow on behalf of someone else using their card</li>
                         </ul>
+                        <div class="text-center">
+                            <p>To avoid fines accumulating, return books by the due date, or, if possible, renew them.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div> 
         <!--End of Borrowing from the library Modal-->      
-    <!--End of Modals-->
+        <!--End of Modals-->
 
-<script>
-    //on page load
-    $(document).ready(function () {
-        $(".overlay").addClass('overlay-open');
-        $("section, .container").addClass('blur');
-    });
-    
-    //on click
-    $(document).on('click touchstart', '.overlay', function () {
-        $('.overlay').addClass('animated fadeOut');
-        $("section, .container").removeClass('blur');
-        $('.overlay').removeClass('overlay-open');
-    });    
-</script>
+        <script>
+            //on page load
+            $(document).ready(function () {
+                $(".overlay").addClass('overlay-open');
+                $("section, .container").addClass('blur');
+            });
 
-<script type="text/javascript">
-    function searchEncore(){
-         var encoreBaseURLInput,encoreBaseURL, searchInput, searchString, locationHref, charRegExString, base64Regex;
-         var base64_encoding_map = {"=":"PQ==", "/": "Lw==", "\\":"XA==", "?":"Pw=="};
-         var escapeRegExp = function(string) {
-             return string.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1");
-         }
-         encoreBaseURLInput = document.getElementById("encoreBase");
-         searchInput = document.getElementById("encoreSearchInput");
-         if (searchInput && encoreBaseURLInput) {
-             encoreBaseURL = encoreBaseURLInput.value;
-             searchString = searchInput.value;
-             for (var specialChar in base64_encoding_map) {
-                 charRegExString = escapeRegExp(specialChar);
-                 base64Regex = new RegExp(charRegExString, "g");
-                 searchString = searchString.replace(base64Regex, base64_encoding_map[specialChar])
-             }
-             searchString = encodeURIComponent(searchString);
-             locationHref = encoreBaseURL + "C__S" + searchString + "__Orightresult__U";
-             window.open(locationHref,'_blank' );
-         }
-         return false;
-     }
-</script> 
+            //on click
+            $(document).on('click touchstart', '.overlay', function () {
+                $('.overlay').addClass('animated fadeOut');
+                $("section, .container").removeClass('blur');
+                $('.overlay').removeClass('overlay-open');
+            });
+        </script>
 
-</body>
-    
+        <script type="text/javascript">
+            function searchEncore() {
+                var encoreBaseURLInput, encoreBaseURL, searchInput, searchString, locationHref, charRegExString, base64Regex;
+                var base64_encoding_map = {"=": "PQ==", "/": "Lw==", "\\": "XA==", "?": "Pw=="};
+                var escapeRegExp = function (string) {
+                    return string.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1");
+                }
+                encoreBaseURLInput = document.getElementById("encoreBase");
+                searchInput = document.getElementById("encoreSearchInput");
+                if (searchInput && encoreBaseURLInput) {
+                    encoreBaseURL = encoreBaseURLInput.value;
+                    searchString = searchInput.value;
+                    for (var specialChar in base64_encoding_map) {
+                        charRegExString = escapeRegExp(specialChar);
+                        base64Regex = new RegExp(charRegExString, "g");
+                        searchString = searchString.replace(base64Regex, base64_encoding_map[specialChar])
+                    }
+                    searchString = encodeURIComponent(searchString);
+                    locationHref = encoreBaseURL + "C__S" + searchString + "__Orightresult__U";
+                    window.open(locationHref, '_blank');
+                }
+                return false;
+            }
+        </script> 
+
+    </body>
+
 </html>

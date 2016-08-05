@@ -8,7 +8,6 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position: 50% 50%;
-    font-family: 'Open Sans', sans-serif;
     outline: 0;
     background-color: #00bce4;
 }
@@ -47,7 +46,6 @@ a:hover {
 }
 
 p {
-    font-family: 'Open Sans', sans-serif;
     font-size: 13px;
     line-height: 21px;
 }
@@ -217,6 +215,7 @@ and (max-width : 1199px) {
   font-size: 50px;
   color: #ffffff;
   opacity: 1;
+  padding-right: 20px;
 }
 
 /******* overlay *******/
@@ -305,6 +304,10 @@ and (max-width : 1199px) {
 
 /*Ronan CSS changes*/
 
+.tab-content {
+    padding-top: 10px;
+}
+
 .tab-content p  {
     font-size: 20px;
     color: #323232;
@@ -314,6 +317,10 @@ and (max-width : 1199px) {
     color: #323232;
 }
 
+.tab-content .modal-notes p {
+    
+}
+
 .modal-content {
     font-family: 'Raleway', sans-serif;
 }
@@ -321,6 +328,7 @@ and (max-width : 1199px) {
 .modal-content p{
     font-size: 20px;
     color: #323232;
+    line-height: 30px;
 }
 
 .modal-content ul   {
@@ -349,6 +357,15 @@ and (max-width : 1199px) {
 
 .modal-content u {
     color: #00bce4;
+}
+
+.modal-body .search-tip {
+    padding-top: 25px;
+}
+
+.modal-body .search-tip p {
+    font-size: 15px;
+    color: #c7c7c7;
 }
 
 .big-icon {
